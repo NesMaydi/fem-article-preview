@@ -1,0 +1,161 @@
+:root{
+    --color-txt-title-bold: #48556A;
+    --color-txt-article: #6E8098;
+    --color-txt-date: #9DAEC2;
+    --color-bg-card: #FFFFFF;
+    --color-bg-body:#F2F2F2 ;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--color-bg-body);
+    overflow-x: hidden;
+}
+
+#article-preview-title{
+    color: var(--color-txt-title-bold);
+    font-size: 16px;
+    line-height: 24px;
+letter-spacing: 0.2px;
+}
+#article-preview-text{
+    width: 263px;
+height: 80px;
+text-align: justify;
+    color: var(--color-txt-article);
+    font-size: 13px;
+    font-weight: 200;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.11px;
+}
+.article-author-name{
+    color: var(--color-txt-title-bold);
+    font-size: 13px;
+    margin: 0;
+}
+.article-date{
+    color: var(--color-txt-date
+    );
+font-size: 13px;
+margin: 0;
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 200;
+font-size: 13px;
+line-height: 20px;
+letter-spacing: 5px;
+color: #9DAEC2;
+margin-left: 32px;
+}
+
+.card{
+    width: 327px;
+height: 512px;
+margin: 74px auto;
+background: var(--color-bg-card);
+box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+}
+
+.img-card-area{
+    width: 327px;
+height: 200px;
+background: url(images/drawers.jpg) no-repeat;
+background-size: cover;
+}
+
+.text-card-area{
+    width: 263px;
+    align-self: center;
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+
+
+.main-bottom-card-content{
+    width: 327px;
+    height: 60px;
+    display: flex;
+    align-content: center;
+}
+
+.img-profile-card{
+    width: 40px;
+    height: 40px;
+    background: url(images/avatar-michelle.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 999px;
+    justify-content: flex-start;
+    margin-left: 32px;
+    margin-right: 16px;
+
+}
+
+/* duplicate buttons , same but different */
+
+
+
+.share-logo{
+    width: 32px;
+    height: 32px;
+    background: url(images/icon-share.svg) no-repeat #ECF2F8;
+    border-radius: 999px;
+    background-position: center;
+}
+#share-btn1{
+justify-self: flex-end;
+margin-left: 59px;
+cursor: pointer;
+display: block;
+z-index: 5;
+}
+
+#share-btn2{
+    
+}
+
+
+
+.show{
+visibility: hidden;
+display:flex; 
+position: absolute;
+    background: #48556A;
+    width: 327px;
+height: 64px;
+border-radius: 0px 0px 10px 10px;
+align-items: center;
+}
+
+
+.social-logo{
+    display: flex;
+    margin-left: 21px;
+    margin-right: 56px;
+
+}
+
+img{
+    margin-right: 16px;
+}
+
+img:nth-child(3){
+    margin-right: 0;
+}
+
+
+
+/* ---- DO NOT REMOVE OR PLACE ELSWHERE ---- */
+.active{
+visibility: visible;
+}
+
+.inactive{
+    display: none;
+}
+
