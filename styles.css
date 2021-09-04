@@ -230,6 +230,16 @@ margin: 0;
 }
 /* 20px */
 
+@media screen and (min-width: 2560px) {
+
+  .show{
+    top: 380px;
+    left: 1460px;
+  }
+  
+}
+
+
 .active {
     visibility: visible;
   }
