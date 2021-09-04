@@ -1,161 +1,239 @@
-:root{
-    --color-txt-title-bold: #48556A;
-    --color-txt-article: #6E8098;
-    --color-txt-date: #9DAEC2;
-    --color-bg-card: #FFFFFF;
-    --color-bg-body:#F2F2F2 ;
+:root {
+  --color-txt-title-bold: #48556a;
+  --color-txt-article: #6e8098;
+  --color-txt-date: #9daec2;
+  --color-bg-card: #ffffff;
+  --color-bg-body: #f2f2f2;
 }
 
-body{
-    font-family: 'Manrope', sans-serif;
-    background-color: var(--color-bg-body);
-    overflow-x: hidden;
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--color-bg-body);
+  overflow-x: hidden;
 }
 
-#article-preview-title{
-    color: var(--color-txt-title-bold);
-    font-size: 16px;
-    line-height: 24px;
-letter-spacing: 0.2px;
+#article-preview-title {
+  color: var(--color-txt-title-bold);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
-#article-preview-text{
-    width: 263px;
-height: 80px;
-text-align: justify;
-    color: var(--color-txt-article);
-    font-size: 13px;
-    font-weight: 200;
-font-size: 13px;
-line-height: 20px;
-letter-spacing: 0.11px;
+#article-preview-text {
+  width: 263px;
+  height: 80px;
+  text-align: justify;
+  color: var(--color-txt-article);
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.11px;
 }
-.article-author-name{
-    color: var(--color-txt-title-bold);
-    font-size: 13px;
-    margin: 0;
+.article-author-name {
+  color: var(--color-txt-title-bold);
+  font-size: 13px;
+  margin: 0;
 }
-.article-date{
-    color: var(--color-txt-date
-    );
-font-size: 13px;
-margin: 0;
-}
-
-h3{
-    text-transform: uppercase;
-    font-weight: 200;
-font-size: 13px;
-line-height: 20px;
-letter-spacing: 5px;
-color: #9DAEC2;
-margin-left: 32px;
+.article-date {
+  color: var(--color-txt-date);
+  font-size: 13px;
+  margin: 0;
 }
 
-.card{
-    width: 327px;
-height: 512px;
-margin: 74px auto;
-background: var(--color-bg-card);
-box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
-border-radius: 10px;
-display: flex;
-flex-direction: column;
+h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  color: #9daec2;
+  margin-left: 32px;
 }
 
-.img-card-area{
-    width: 327px;
-height: 200px;
-background: url(images/drawers.jpg) no-repeat;
-background-size: cover;
+.card {
+  width: 327px;
+  height: 512px;
+  margin: 74px auto;
+  background: var(--color-bg-card);
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.text-card-area{
-    width: 263px;
-    align-self: center;
-    margin-top: 36px;
-    margin-bottom: 40px;
+.img-card-area {
+  width: 327px;
+  height: 200px;
+  background: url(images/drawers.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
 }
 
-
-.main-bottom-card-content{
-    width: 327px;
-    height: 60px;
-    display: flex;
-    align-content: center;
+.text-card-area {
+  width: 263px;
+  align-self: center;
+  margin: 36px auto 40px auto;
+  
 }
 
-.img-profile-card{
-    width: 40px;
-    height: 40px;
-    background: url(images/avatar-michelle.jpg) no-repeat;
-    background-size: cover;
-    border-radius: 999px;
-    justify-content: flex-start;
-    margin-left: 32px;
-    margin-right: 16px;
+.main-bottom-card-content {
+  width: 327px;
+  height: 60px;
+  display: flex;
+  align-content: center;
+}
 
+.img-profile-card {
+  width: 40px;
+  height: 40px;
+  background: url(images/avatar-michelle.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 999px;
+  justify-content: flex-start;
+  margin-left: 32px;
+  margin-right: 16px;
 }
 
 /* duplicate buttons , same but different */
 
-
-
-.share-logo{
-    width: 32px;
-    height: 32px;
-    background: url(images/icon-share.svg) no-repeat #ECF2F8;
-    border-radius: 999px;
-    background-position: center;
+.share-logo {
+  width: 32px;
+  height: 32px;
+  background: url(images/icon-share.svg) no-repeat #ecf2f8;
+  border-radius: 999px;
+  background-position: center;
 }
-#share-btn1{
-justify-self: flex-end;
-margin-left: 59px;
-cursor: pointer;
-display: block;
-z-index: 5;
+#share-btn1 {
+  justify-self: flex-end;
+  margin-left: 59px;
+  cursor: pointer;
+  display: block;
+  z-index: 5;
 }
 
-#share-btn2{
+
+
+.show {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  background: #48556a;
+  top: 520px;
+  width: 327px;
+  height: 64px;
+  border-radius: 0px 0px 10px 10px;
+  align-items: center;
+  z-index: 1;
+}
+
+.social-logo {
+  display: flex;
+  margin-left: 21px;
+  margin-right: 56px;
+}
+
+img {
+  margin-right: 16px;
+}
+
+img:nth-child(3) {
+  margin-right: 0;
+}
+
+/* ---- DO NOT REMOVE OR PLACE ELSWHERE (because for some reason it breaks everything if it somewhere else uh)---- */
+
+
+/* -- MEDIAS QUERIES (FOR 1140px only) --- */
+
+@media screen and (min-width: 1440px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+
+    width: 730px;
+    height: 280px;
+    display: grid;
+    margin: 260px auto;
+    grid-template-columns: 285px 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .img-card-area {
+    width: 285px;
+    height: 280px;
+  }
+
+  .text-card-area {
+    width: 365px;
+    margin: 32px auto 20px auto;
+  }
+
+  .right-card-area {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  #article-preview-title{
+    width: 365px;
+    height: 84px;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0.25px;
+margin: 0;
+  }
+
+#article-preview-text{
+    width: 365px;
+    height: 60px;
+    margin: 12px 0 0 0;
     
 }
 
-
-
-.show{
-visibility: hidden;
-display:flex; 
-position: absolute;
-    background: #48556A;
-    width: 327px;
-height: 64px;
-border-radius: 0px 0px 10px 10px;
-align-items: center;
+.main-bottom-card-content {
+    width: 365px;
+    height: 40px;
+    margin: 0 auto 32px auto;
+  }
+.img-profile-card {
+    margin: 0 16px 0 0;
 }
 
+#share-btn1{
+    margin-left: 161px;
+}
+
+#share-btn2{
+  display: none;
+}
+.show{
+    width: 248px;
+    height: 67px;
+    position: absolute;
+    top: 389px ;
+    left: 905px;
+    box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+    z-index: 6;
+    border-radius: 10px;
+}
 
 .social-logo{
-    display: flex;
-    margin-left: 21px;
-    margin-right: 56px;
-
-}
-
-img{
-    margin-right: 16px;
-}
-
-img:nth-child(3){
     margin-right: 0;
 }
 
 
-
-/* ---- DO NOT REMOVE OR PLACE ELSWHERE ---- */
-.active{
-visibility: visible;
 }
+/* 20px */
 
-.inactive{
+.active {
+    visibility: visible;
+  }
+  
+  .inactive {
     display: none;
-}
-
+  }

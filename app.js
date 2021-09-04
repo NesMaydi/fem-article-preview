@@ -1,7 +1,7 @@
 
 
 
-const changeState = () => {
+const screenStateUpdate = () => {
     const priorStateComponent = document.getElementsByClassName('hide');
     const newState = document.getElementsByClassName("show");
 
@@ -15,11 +15,29 @@ const changeState = () => {
     
 }
 
+const screenStateUpdateWide = () =>{
+    const newState = document.getElementsByClassName("show");
+
+    for (let i = 0; i < newState.length; i++){
+        newState[i].classList.toggle("active");
+    }
+
+
+}
 
 const btnShare = document.getElementsByClassName('share-logo');
 
 for (let k = 0; k < btnShare.length; k++){
+
     btnShare[k].addEventListener("click", function(){
-        changeState();
-    })
+            if (screen.width < 1440){
+                screenStateUpdate();
+            } else {
+                screenStateUpdateWide();
+            };
+
+            window.addEventListener('resize', () => {
+                window.location.reload();
+            })
+})
 }
